@@ -116,7 +116,7 @@ body{
     border-radius: 10px; 
     transition: transform 0.3s ease; 
 }
-.buttons{
+.vmbuttons{
     display: flex;
     justify-content: space-between;
 }
@@ -148,7 +148,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.buttons button{
+.vmbuttons button{
     background-color: rgb(37, 144, 232);
     color: white;
     border: none;
@@ -252,6 +252,12 @@ body{
 .greet{
     color: white;
     padding: 5px;
+}
+.carttable{
+    border: dotted;
+    border-color: white;
+    display: block;
+    display: flex;
 }
 @media only screen and (max-width: 600px) {
     .section1 {
