@@ -7,7 +7,7 @@
 
 }
 body{
-    background-color: rgb(14, 166, 226);
+    background-color: rgb(14, 5, 48);
 }
 .header{
     text-align: center;
@@ -253,11 +253,32 @@ body{
     color: white;
     padding: 5px;
 }
-.carttable{
-    border: dotted;
-    border-color: white;
-    display: block;
-    display: flex;
+.carttable {
+    border: 5px dotted white;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border-collapse: collapse; 
+    height: 75vh;
+    color: white;
+}
+.carttable th, .carttable td {
+    border: 5px dotted white; 
+    padding: 10px; 
+    text-align: center; 
+}
+.reset-button{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.reset-button button{
+    color: white;
+    background-color: rgb(27, 140, 246);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 15px;
 }
 @media only screen and (max-width: 600px) {
     .section1 {
