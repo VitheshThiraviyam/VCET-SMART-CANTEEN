@@ -37,7 +37,7 @@ if(isset($_POST['asubmit']))
     </div>
     <div class="container">
         <form class="form" action="Alogin.php" method="post" autocomplete="off">
-            <h2>Login</h2>
+            <h2>Admin Login</h2>
             <label>Enter your employee id</label>
             <input type="text" name="aempno" autocomplete="off" required>
             <label>Set a Password</label>

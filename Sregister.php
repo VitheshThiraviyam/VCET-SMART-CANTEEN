@@ -101,7 +101,7 @@ unset($_SESSION['msg_type']);
 
     <div class="container">
         <form class="form" action="Sregister.php" method="post">
-            <h2>Sign Up</h2>
+            <h2>Student Sign Up</h2>
             <label>Enter your Name</label>
             <input type="text" name="sname" value="" required>
 

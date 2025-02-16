@@ -100,7 +100,7 @@ unset($_SESSION['msg_type'])
     </div>
     <div class="container">
         <form class="form" action="Aregister.php" method="post" autocomplete="off">
-            <h2>Sign Up</h2>
+            <h2>Admin Sign Up</h2>
             <label>Enter your Name</label>
             <input type="text" name="aname" autocomplete="off" required>
 

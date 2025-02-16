@@ -19,7 +19,7 @@ if (isset($_POST['vbCartadd'])) {
     $vbvalue = "UPDATE `cart` SET `vbqty` = '$value' WHERE roll_no = '$roll'";
 
     if (mysqli_query($con, $vbvalue)) {
-        echo "Item added to cart successfully!";
+        echo "<h2>Item added to cart successfully!</h2>";
     } else {
         echo "Error: " . mysqli_error($con);
     }
@@ -29,7 +29,7 @@ if (isset($_POST['vmCartadd'])) {
     $vmvalue = "UPDATE `cart` SET `vmqty` = '$value' WHERE roll_no = '$roll'";
 
     if (mysqli_query($con, $vmvalue)) {
-        echo "Item added to cart successfully!";
+        echo "<h2>Item added to cart successfully!</h2>";
     } else {
         echo "Error: " . mysqli_error($con);
     }
@@ -39,7 +39,7 @@ if (isset($_POST['vfrCartadd'])) {
     $vfrvalue = "UPDATE `cart` SET `vfrqty` = '$value' WHERE roll_no = '$roll'";
 
     if (mysqli_query($con, $vfrvalue)) {
-        echo "Item added to cart successfully!";
+        echo "<h2>Item added to cart successfully!</h2>";
     } else {
         echo "Error: " . mysqli_error($con);
     }
@@ -49,7 +49,7 @@ if (isset($_POST['efr-Cartadd'])) {
     $efrvalue = "UPDATE `cart` SET `efrqty` = '$value' WHERE roll_no = '$roll'";
 
     if (mysqli_query($con, $efrvalue)) {
-        echo "Item added to cart successfully!";
+        echo "<h2>Item added to cart successfully!</h2>";
     } else {
         echo "Error: " . mysqli_error($con);
     }
@@ -69,7 +69,7 @@ if (isset($_POST['vpCartadd'])) {
     $vpvalue = "UPDATE `cart` SET `vpqty` = '$value' WHERE roll_no = '$roll'";
 
     if (mysqli_query($con, $vpvalue)) {
-        echo "Item added to cart successfully!";
+        echo "<h2>Item added to cart successfully!</h2>";
     } else {
         echo "Error: " . mysqli_error($con);
     }
@@ -79,7 +79,7 @@ if (isset($_POST['sCartadd'])) {
     $svalue = "UPDATE `cart` SET `sqty` = '$value' WHERE roll_no = '$roll'";
 
     if (mysqli_query($con, $svalue)) {
-        echo "Item added to cart successfully!";
+        echo "<h2>Item added to cart successfully!</h2>";
     } else {
         echo "Error: " . mysqli_error($con);
     }
@@ -89,7 +89,7 @@ if (isset($_POST['cbCartadd'])) {
     $cbvalue = "UPDATE `cart` SET `cbqty` = '$value' WHERE roll_no = '$roll'";
 
     if (mysqli_query($con, $cbvalue)) {
-        echo "Item added to cart successfully!";
+        echo "<h2>Item added to cart successfully!</h2>";
     } else {
         echo "Error: " . mysqli_error($con);
     }
@@ -114,6 +114,11 @@ if (isset($_POST['cbCartadd'])) {
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    h2{
+        color: white;
+    }
+</style>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let quantity = 0;

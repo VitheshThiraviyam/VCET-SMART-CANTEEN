@@ -9,45 +9,61 @@
 body{
     background-color: rgb(14, 5, 48);
 }
-.header{
+.header {
     text-align: center;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
-.logo img{
+
+.logo img {
     width: 50px;
     border-radius: 25px;
-    display: flex;
+    display: block;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: flex-end;
 }
-.items a{
+
+.items a {
     text-decoration: none;
     margin-right: 15px;
     color: white;
 }
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
     color: white;
     background-color: rgb(105, 81, 210);
     padding: 15px;
     border-radius: 20px;
-    margin: 20px auto;
-    margin-top: 25px;
+    margin: 25px auto;
 }
 
-.image img{
-    width: 500px;
+.image img {
+    width: 100%;
+    max-width: 500px;
     background-color: white;
     border-radius: 25px;
     margin-top: 5px;
+    height: auto;
+}
+.menu-btn {
+    display: none;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 .container {
     display: flex;
@@ -108,6 +124,17 @@ body{
 .section1 .vegbiriyani:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    background-color: rgb(37, 144, 232);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .section1 img {
@@ -240,6 +267,7 @@ body{
 }
 .cart i{
     size: 500px;
+    color: white;
 }
 .Cartadd{
     width: 200px;
@@ -300,5 +328,32 @@ body{
         width: auto;
         margin-bottom: 10px;
         text-align: center; 
+    }
+}
+@media (max-width: 768px) {
+    .items {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(105, 81, 210);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .items a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .items.show {
+        display: flex;
     }
 }

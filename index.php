@@ -15,12 +15,13 @@
         <span class="logo"><img src="logo.jpg"></span>
     
     </div>
+    <button class="menu-btn">☰</button>
     <div class="navbar">
         <div class="items">
             <a href="">Home</a>
             <a href="Slogin.php">Student Login</a>
             <a href="Aregister.php">Admin Login</a>
-            <a href="">About Us</a>
+            <a href="about.php">About Us</a>
         </div>
     </div>
     <div class="main">
@@ -35,4 +36,22 @@
         </div>
     </div>
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".menu-btn");
+    const menuItems = document.querySelector(".items");
+
+    menuBtn.addEventListener("click", function () {
+        menuItems.classList.toggle("show");
+
+        // Toggle between ☰ and ✖
+        if (menuItems.classList.contains("show")) {
+            menuBtn.textContent = "✖";
+        } else {
+            menuBtn.textContent = "☰";
+        }
+    });
+});
+
+</script>
 </html>

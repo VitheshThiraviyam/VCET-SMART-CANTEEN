@@ -41,7 +41,7 @@ if(isset($_POST['submit']))
     </div>
     <div class="container">
         <form class="form" action="Slogin.php" method="post">
-            <h2>Login</h2>
+            <h2>Student Login</h2>
             <label>Enter your Rollno</label>
             <input type="text" name="sroll">
             <label>Enter your password</label>
